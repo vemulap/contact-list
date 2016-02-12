@@ -15,7 +15,7 @@ angular.module('contactsListApp')
 })
 
 //view contacts
-.controller('viewContactCtrl', function ($scope,$rootScope,$routeParams,ContactService){
+.controller('viewContactCtrl', function ($scope,$rootScope,$routeParams){
   var index = $routeParams.index;
   $scope.selectedContact = $scope.contacts[index];
   
@@ -49,7 +49,7 @@ angular.module('contactsListApp')
 
   service.getContacts = function () {
     return contactList;
-  }
+  };
 
   // contact list JSON object
   var contactList = [
@@ -97,7 +97,7 @@ angular.module('contactsListApp')
     "phone": "+1 (845) 540-2412",
 	"image":"https://unsplash.it/40/40/?random"
   }
-]
+];
   
   return service;
 }]);
