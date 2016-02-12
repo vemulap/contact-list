@@ -11,7 +11,7 @@
 		<ul class="list-group">
 			<li class="list-group-item" ng-repeat="contact in contacts | orderBy: 'firstName' | filter: searchText ">
 				<a ng-href="#/viewcontacts/{{contacts.indexOf(contact)}}">
-					{{contact.firstName}}		
+					{{contact.firstName}} {{contact.lastName}}	
 				</a>
 			</li>
 		</ul>
