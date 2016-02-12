@@ -30,17 +30,9 @@
 			</div>
 		</form>	
 		<div class="text-center">
-			<a ng-if="path === '/add' " ng-href="#/addContacts/{{ contacts.length - 1 }}" ng-click="addContact()">
-				<button class="btn btn-primary margin-right">
-					<span><i class="fa fa-check"></i> Add</span>
-				</button>
-			</a>
+			<a ng-if="path === '/add' " ng-href="#/addContacts/{{ contacts.length - 1 }}" ng-click="addContact()"><button class="btn btn-primary margin-right"><span><i class="fa fa-check"></i> Add</span></button></a>
 			<a ng-if="path !== '/add'" ng-href="#/addContacts/{{index}}"><button class="btn btn-primary margin-right"><span ><i class="fa fa-check"></i> Save</span></button></a>
-			<a href="#/">
-				<button class="btn btn-default">
-					<span><i class="fa fa-close"></i> Cancel</span>
-				</button>
-			</a>
+			<a href="#/"><button class="btn btn-default"><span><i class="fa fa-close"></i> Cancel</span></button></a>
 	  </div>
 	</div>
 </div>
