@@ -8,7 +8,7 @@ In order to get the project up and running please follow the steps below. The in
 Clone a copy of this repository to your local machine.
 
 #### Step 2
-*Note: Make sure you have `node.js` installed globally. This will enable you to run npm directives. If you have `node.js` and `Grunt` skip to step 3.*
+*Note: Make sure you have `node.js` installed globally. This will enable you to run npm directives. If you have `node.js` and `Grunt` skip to step 4.*
 
 Install the latest version of [NodeJS](http://nodejs.org). You can also install node.js via command line tool of your choice (PowerShell, Terminal, Bash etc). Open your command line tool of choice and run:
 ```
@@ -24,7 +24,7 @@ sudo npm install -g grunt-cli
 **Excellent!** You now have `Node` and `Grunt` installed on your system and ready to go.
 
 #### Step 4
-Once you are in the project directory, type in the following command:
+Once you are in the project directory, type in the following command to install node packages:
 ```
 sudo npm install
 ```
@@ -36,5 +36,5 @@ bower install
 ```
 
 ## Build & development
-* To build the application start by runing `grunt` command and to see the application in action run `grunt serve` for preview.
+* To build the application run the `grunt` command and to see the application in action run `grunt serve` for preview of the application in the browser.
 
