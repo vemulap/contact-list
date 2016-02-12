@@ -39,3 +39,6 @@ bower install
 ## Build & development
 To build the application run the `grunt` command and to see the application in action run `grunt serve` for preview of the application in the browser.
 
+## Details about the App
+
+Starting the application takes you to the Contacts Page where we can see all the contacts as well as search for the contacts. Click on the `+` button to start adding new contacts. After adding a new contact it shows up on the contact list page. You can view a contact details by clicking on the name of the contact from the Contacts Page. This will open up a details page of the contact where you can `Edit` or `Delete` a contact.
