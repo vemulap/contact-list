@@ -10,7 +10,7 @@ Clone a copy of this repository to your local machine.
 #### Step 2
 Install the latest version of [NodeJS](http://nodejs.org). You can also install node.js via command line tool of your choice (PowerShell, Terminal, Bash etc). Open your command line tool of choice and run:
 ```
-sudo npm install npm -g
+sudo npm install -g
 ```
 *Note: Make sure you have `node.js` installed globally. This will enable you to run npm directives. If you have `node.js` and `Grunt` skip to step 3.*
 
