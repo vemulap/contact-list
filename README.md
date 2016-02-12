@@ -36,5 +36,5 @@ bower install
 ```
 
 ## Build & development
-* To build the application run the `grunt` command and to see the application in action run `grunt serve` for preview of the application in the browser.
+To build the application run the `grunt` command and to see the application in action run `grunt serve` for preview of the application in the browser.
 
