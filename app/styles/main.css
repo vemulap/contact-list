@@ -1,0 +1,65 @@
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header{
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header{
+    padding-left: 0;
+    padding-right: 0;
+	margin-bottom: 30px;
+  }
+}
+
+/*Add icon before placeholder content*/
+::-webkit-input-placeholder{ text-align: center; }
+::-moz-placeholder  { text-align: center;  } /* firefox 19+ */
+:-ms-input-placeholder { text-align: center;  } /* ie */
+input:-moz-placeholder  { text-align: center;  }
+::-webkit-input-placeholder::before { font-family: fontAwesome; content:'\f002'; }
+::-moz-placeholder::before  { font-family: fontAwesome; content:'\f002';  } /* firefox 19+ */
+:-ms-input-placeholder::before  { font-family: fontAwesome; content:'\f002';  } /* ie */
+input:-moz-placeholder::before  { font-family: fontAwesome; content:'\f002';  }
+
+/*align add contacts icon*/
+.add-contacts-link { margin-top: -18px; }
+.contact-img {
+	border-radius:50%;
+	background:#cecece;
+	height:40px;
+	width:40px;
+}
+
+/*helper classes*/
+.padding { padding: 10px ;}
+.padding-sm { padding: 5px ;}
+.margin-right { margin-right: 10px; }
+.margin-top-lg { margin-top: 15px; }
+.margin-top-sm{margin-top: 5px;}
+
+/*list details*/
+.list-details > li {
+	margin-bottom: 10px;	
+}
+.list-details > li .data-label { font-weight: bold; }

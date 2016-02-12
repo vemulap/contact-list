@@ -1,0 +1,23 @@
+<div  ng-controller="viewContactCtrl" class="container">
+	<div class="row">
+		<div class="pull-left">
+			<img ng-src={{selectedContact.image}} class="contact-img"/>
+		</div>
+		<div class="pull-left"><p class="padding">{{selectedContact.firstName}} {{selectedContact.lastName}}</p></div>
+	</div>
+	<div class="row">
+		<ul class="list-group-item list-unstyled list-details">
+			<li><span class="data-label">First Name:</span> {{selectedContact.firstName}}</li>
+			<li><span class="data-label">Last Name:</span> {{selectedContact.lastName}}</li>
+			<li><span class="data-label">Email:</span> {{selectedContact.email}}</li>
+			<li><span class="data-label">Phone:</span> {{selectedContact.phone}}</li>
+			<li>
+			<div class="margin-top-lg">
+				<a ng-href="#/edit/{{contacts.indexOf(selectedContact)}}"><button class="btn btn-primary margin-right"><span><i class="fa fa-pencil"></i> Edit</span></button></a>
+				<a href="#/"><button class="btn btn-default" ng-click="deleteContact(selectedContact)"><span><i class="fa fa-close"></i> Delete</span></button>
+				</a>
+			</div>
+			</li>
+		</ul>
+	</div>
+</div>

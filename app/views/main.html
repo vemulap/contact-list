@@ -1,0 +1,23 @@
+<div class="row panel panel-default" ng-controller="MainCtrl">
+  <div class="panel-heading">
+	<h2 class="panel-title">All contacts</h2>
+	<a ng-href="#/add" class="pull-right add-contacts-link"><i class="fa fa-plus fa-lg"></i></a>
+  </div>
+  <div class="alert alert-success text-center" ng-class="{hidden : !notifyUser}"> {{notifyUser}}</div>
+  <div class="panel-body">
+	<ul class="list-group list-unstyled">
+	  <li>
+		<input class="form-control" placeholder="Search" type="text" ng-model="searchText">
+		<ul class="list-group">
+			<li class="list-group-item" ng-repeat="contact in contacts | orderBy: 'firstName' | filter: searchText ">
+				<a ng-href="#/viewcontacts/{{contacts.indexOf(contact)}}">
+					{{contact.firstName}}		
+				</a>
+			</li>
+		</ul>
+	  </li>
+	</ul> 
+ </div>
+</div>
+ 
+
